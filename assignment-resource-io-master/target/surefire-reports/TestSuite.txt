@@ -1,0 +1,61 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 0.894 sec <<< FAILURE!
+addOptionShouldMethodShouldAppendPropertiesFileWithNewProperty(com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.UnsupportedOperationException: Not implemented.
+	at com.qainfotech.tap.training.resourceio.PropertiesOptionsIO.addOption(PropertiesOptionsIO.java:86)
+	at com.qainfotech.tap.training.resourceio.PropertiesOptionsIOTest.addOptionShouldMethodShouldAppendPropertiesFileWithNewProperty(PropertiesOptionsIOTest.java:37)
+
+Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.Team_getActiveMembers_should_return_a_list_of_team_members_that_are_active(TeamsJsonReaderTest.java:110)
+
+Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.Team_getInactiveMembers_should_return_a_list_of_individual_team_members_that_are_inactive(TeamsJsonReaderTest.java:118)
+
+getIndividualById_should_return_Individual_object_matching_id(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getIndividualById(TeamsJsonReader.java:231)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getIndividualById_should_return_Individual_object_matching_id(TeamsJsonReaderTest.java:63)
+
+getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getIndividualById(TeamsJsonReader.java:231)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getIndividualById_should_throw_ObjectNotFoundException_for_incorrect_id(TeamsJsonReaderTest.java:71)
+
+getIndividualByName_should_return_Individual_object_matching_name(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getIndividualByName(TeamsJsonReader.java:253)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getIndividualByName_should_return_Individual_object_matching_name(TeamsJsonReaderTest.java:79)
+
+getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getIndividualByName(TeamsJsonReader.java:253)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getIndividualByName_should_throw_ObjectNotFoundException_for_incorrect_name(TeamsJsonReaderTest.java:87)
+
+getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.049 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[4]> but was:<[0]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfActiveIndividuals_ahould_return_array_list_of_only_active_individual_objects(TeamsJsonReaderTest.java:43)
+
+getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfInactiveIndividuals(TeamsJsonReader.java:304)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfInactiveIndividuals_should_return_array_list_of_only_inactive_individual_objects(TeamsJsonReaderTest.java:52)
+
+getListOfIndividuals_should_return_array_list_of_all_individual_objects(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReader.getListOfIndividuals(TeamsJsonReader.java:209)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfIndividuals_should_return_array_list_of_all_individual_objects(TeamsJsonReaderTest.java:29)
+
+getListOfTeams_should_return_a_list_if_Team_object_from_db_json(com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[2]> but was:<[0]>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.qainfotech.tap.training.resourceio.TeamsJsonReaderTest.getListOfTeams_should_return_a_list_if_Team_object_from_db_json(TeamsJsonReaderTest.java:93)
+
